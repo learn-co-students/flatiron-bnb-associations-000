@@ -1,0 +1,10 @@
+bundle exec rails generate scaffold City name:string --no-test-framework
+rails generate scaffold Listing title:string description:string address:string listing_type:string price:float --no-test-framework
+rails generate scaffold Neighborhood name:string --no-test-framework
+rails generate scaffold Reservation checkin:date checkout:date --no-test-framework
+rails generate scaffold User name:string --no-test-framework
+rails generate scaffold Review description:string rating:integer --no-test-framework
+
+
+
+rails generate migration AddUserRefToPosts user:references --no-test-framework
